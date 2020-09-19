@@ -154,5 +154,27 @@ padding: 40px 20px;
 }
 
 .videoCard__info {
+  margin-top: 10px;
   display: flex;
+  margin-right: 20px;
+
+}
+
+.videoCard__text {
+  margin-left: 5px;
+}
+
+.videoCard__text > h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.videoCard__text > p {
+  color: gray;
+  font-size: 14px;
+}
+
+.videoCard__avatar {
+  height: 30px !important;
+  width: 30px !important;
 }

@@ -3,21 +3,32 @@ import './App.css';
 import Header from './Header'
 import Sidebar from './Sidebar'
 import RecommendedVideos from './RecommendedVidoes'
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Search from './Search'
 
 function App() {
   return (
     <div className="app">
-      <Header/>
+      <Router>
 
-      <div className="app__page">
-      <Sidebar />
-      <RecommendedVideos/>
-      </div>
+        <Header />
 
-      {/* SIDEBAR */}
+        <Switch>
+          <Route path="/search/:searchTerm">
+            <Search/>
+          </Route>
 
-      {/* RECOMMENDED VIDEOS */}
+          <Route path="/">
+            <div className="app__page">
+              <Sidebar />
+              <RecommendedVideos />
+            </div>
+          </Route>
 
+        </Switch>
+
+   
+      </Router>
     </div>
   );
 }
