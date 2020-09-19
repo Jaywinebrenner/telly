@@ -12,21 +12,19 @@ function Header() {
   return (
     <div className="header">
       <div className="header__left">
-       <MenuIcon />
-      <img className="header__logoText" src={logo} alt="logo" />
+        <MenuIcon style={{ fontSize: 40 }} />
+        <img className="header__logoText" src={logo} alt="logo" />
       </div>
 
-
-      <div className="header__inputContainer">
-        <input type="text" />
-      <SearchIcon />
+      <div className="header__input">
+        <input placeholder="Search Videos" type="text" />
+        <SearchIcon className="header__inputButton" />
       </div>
       <div className="header__icons">
-      <VideoCallIcon />
-      <AppsIcon />
-      <NotificationsIcon />
-      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-
+        <VideoCallIcon className="header__icon"/>
+        <AppsIcon className="header__icon"/>
+        <NotificationsIcon className="header__icon"/>
+        <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
       </div>
     </div>
   );
