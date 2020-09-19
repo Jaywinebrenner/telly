@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.header__logoText {
+  width: 400px;
+}
