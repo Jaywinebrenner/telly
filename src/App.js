@@ -4,18 +4,21 @@ import Header from './Header'
 import Sidebar from './Sidebar'
 import RecommendedVideos from './RecommendedVidoes'
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Search from './Search'
+import SearchPage from './SearchPage'
+
 
 function App() {
   return (
     <div className="app">
       <Router>
-
         <Header />
 
         <Switch>
-          <Route path="/search/:searchTerm">
-            <Search/>
+            <Route path="/search/:searchTerm">
+              <div className="app__page">
+                <Sidebar />
+                <SearchPage />
+            </div>
           </Route>
 
           <Route path="/">
@@ -24,10 +27,7 @@ function App() {
               <RecommendedVideos />
             </div>
           </Route>
-
         </Switch>
-
-   
       </Router>
     </div>
   );
