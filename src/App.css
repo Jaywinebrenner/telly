@@ -65,6 +65,14 @@
   flex: 0.2;
 }
 
+.sidebar > hr {
+  height: 1px;
+  border: 0;
+  background-color: lightgray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /* SIDEBAR ROW */
 
 .sidebarRow {
@@ -75,7 +83,7 @@
 
 .sidebarRow__icon {
   padding: 10px 20px;
-  color: darkgray;
+  color: #444c52;
 }
 
 .sidebarRow__title {
@@ -83,7 +91,7 @@
   margin-left: 10px;
   font-size: 15px;
   font-weight: 500;
-  color: darkgray;
+  color: #444c52;
 }
 
 .sidebarRow:hover {
@@ -100,10 +108,33 @@
  color: black;
 }
 
+.sidebarRow.selected {
+  background-color: lightgray;
+}
+
+.sidebarRow.selected > .sidebarRow__title {
+ font-weight: bold;
+}
+
+.sidebarRow.selected > .sidebarRow__icon {
+color: #a60c0c;
+}
 
 
 /* RECOMMENED VIDEOS */
 .recommendedVideos {
 flex: 0.8;
-border: 1px solid black;
+/* border: 1px solid black; */
+background-color: #f9f9f9;
+padding-bottom: 0;
+padding: 40px 20px;
+}
+
+.recommendedVideos > h2 {
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.recommendedVidoes__videos {
+  
 }
