@@ -32,6 +32,36 @@ function Search() {
         title="Let's learn about it all!"
         image="https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg"
       />
+
+      <VideoRow
+        views="1.2k"
+        subs="54"
+        description="This video has everything you'd ever want to know contained therin"
+        timestamp="34 minutes ago"
+        channel="The everything channel"
+        title="Let's learn about it all!"
+        image="https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg"
+      />
+
+      <VideoRow
+        views="1.2k"
+        subs="54"
+        description="This video has everything you'd ever want to know contained therin"
+        timestamp="34 minutes ago"
+        channel="The everything channel"
+        title="Let's learn about it all!"
+        image="https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg"
+      />
+
+      <VideoRow
+        views="1.2k"
+        subs="54"
+        description="This video has everything you'd ever want to know contained therin"
+        timestamp="34 minutes ago"
+        channel="The everything channel"
+        title="Let's learn about it all!"
+        image="https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg"
+      />
     </div>
   );
 }

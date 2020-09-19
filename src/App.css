@@ -38,10 +38,15 @@
   border: 1px solid black;
 }
 
-.header__inputButton {
+.header__inputLinkWrapper {
+   display: flex;
+  flex: 0.08;
   width: 10% !important;
   background-color: #fafafa;
   border-left: 1px solid lightgray;
+}
+.header__inputButton {
+  flex: 1;
 }
 
 .header__icons {
@@ -255,7 +260,7 @@ justify-content: space-between;
 }
 
 
-.videoRow__description {
+.videoRow_description {
   margin-top: 20px;
   font-size: 12px;
   color: #606060;

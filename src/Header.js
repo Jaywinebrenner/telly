@@ -20,18 +20,19 @@ function Header() {
         <MenuIcon style={{ fontSize: 40 }} />
 
         <Link to="/">
-        <img className="header__logoText" src={logo} alt="logo" />
+          <img className="header__logoText" src={logo} alt="logo" />
         </Link>
       </div>
 
       <div className="header__input">
         <input
+          className="header__inputField"
           value={inputSearch}
           onChange={(e) => setInputSearch(e.target.value)}
           placeholder="Search Videos"
           type="text"
         />
-        <Link to={`/search/${inputSearch}`}>
+        <Link className="header__inputLinkWrapper" to={`/search/${inputSearch}`}>
           <SearchIcon className="header__inputButton" />
         </Link>
       </div>
