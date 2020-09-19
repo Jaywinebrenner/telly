@@ -1,11 +1,13 @@
 import React from 'react'
-import HomeIcon from "@material-ui/icons/Home";
 
-function SidebarRow({title}) {
+
+function SidebarRow({ Icon, title }) {
+
+
   return (
     <div className="sidebarRow">
-      <HomeIcon/>
-      <h4>{title}</h4>
+      <Icon className="sidebarRow__icon" />
+      <h4 className="sidebarRow__title">{title}</h4>
     </div>
   );
 }

@@ -23,7 +23,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: lightblue;
+  background-color: #fefefe;
 }
 .header__logoText {
   width: 200px;
@@ -69,7 +69,37 @@
 
 .sidebarRow {
   display: flex;
+  align-items: center;
 }
+
+
+.sidebarRow__icon {
+  padding: 10px 20px;
+  color: darkgray;
+}
+
+.sidebarRow__title {
+  flex:1;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: darkgray;
+}
+
+.sidebarRow:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.sidebarRow:hover > .sidebarRow__icon {
+ color: #a60c0c;
+}
+
+
+.sidebarRow:hover > .sidebarRow__title {
+ color: black;
+}
+
 
 
 /* RECOMMENED VIDEOS */
