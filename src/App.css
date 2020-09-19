@@ -7,6 +7,28 @@
 }
 
 
+
+/* HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0px;
+}
 .header__logoText {
-  width: 400px;
+  width: 200px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+}
+
+.header__icons {
+    display: flex;
+  align-items: center;
 }
